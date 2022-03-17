@@ -7,9 +7,11 @@ interface ComponentProps {
 
 function NavLink({ text }: ComponentProps) {
   return (
-    <StyledLink smooth to={text}>
-      {text}
-    </StyledLink>
+    <li>
+      <StyledLink smooth to={text}>
+        {text}
+      </StyledLink>
+    </li>
   );
 }
 

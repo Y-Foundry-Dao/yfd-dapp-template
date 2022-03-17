@@ -3,14 +3,17 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 export default {
   title: 'Navigation/NavLink',
-  component: NavLink
+  component: NavLink,
+  args: {
+    text: 'Nav Link'
+  }
 } as ComponentMeta<typeof NavLink>;
 
-const Template: ComponentStory<typeof NavLink> = (args) => (
-  <NavLink {...args} />
+export const Template: ComponentStory<typeof NavLink> = (args) => (
+  <NavLink text={args.text} />
 );
 
 export const Default = Template.bind({});
 Default.args = {
-  text: 'Nav Text'
+  text: 'My Item'
 };

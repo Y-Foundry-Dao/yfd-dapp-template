@@ -4,9 +4,9 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
-    '@storybook/preset-create-react-app'
+    '@storybook/preset-create-react-app',
+    'storybook-dark-mode'
   ],
-  staticDirs: ['../public'],
   framework: '@storybook/react',
   core: {
     builder: 'webpack5'

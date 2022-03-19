@@ -1,4 +1,5 @@
 import ThemeComponent from '../src/styles/ThemeComponent';
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -9,7 +10,7 @@ export const parameters = {
     }
   },
   backgrounds: {
-    default: 'yfd',
+    default: 'yfd gradient',
     values: [
       {
         name: 'yfd gradient',
@@ -37,6 +38,12 @@ export const parameters = {
         value: '#D7B9A3'
       }
     ]
+  },
+  darkMode: {
+    current: 'dark'
+  },
+  viewport: {
+    viewports: INITIAL_VIEWPORTS
   }
 };
 

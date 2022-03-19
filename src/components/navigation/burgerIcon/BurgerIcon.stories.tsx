@@ -31,7 +31,7 @@ export const BurgerIconTemplate: ComponentStory<typeof BurgerIcon> = (args) => {
 };
 
 export const Open: ComponentStory<typeof BurgerIcon> = (args) => {
-  const [open, setOpen] = useState(true);
+  const [setOpen] = useState(true);
 
   return <BurgerIcon {...args} setOpen={setOpen} />;
 };
@@ -47,7 +47,7 @@ Open.argTypes = {
 };
 
 export const Closed: ComponentStory<typeof BurgerIcon> = (args) => {
-  const [open, setOpen] = useState(false);
+  const [setOpen] = useState(false);
 
   return <BurgerIcon {...args} setOpen={setOpen} />;
 };

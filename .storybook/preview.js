@@ -1,4 +1,4 @@
-import ThemeComponent from '../src/styles/ThemeComponent';
+import ThemeComponent from '/src/styles/ThemeComponent';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 export const parameters = {

@@ -4,6 +4,8 @@ import { ReactComponent as Twitter } from 'assets/twitter.svg';
 import { ReactComponent as Discord } from 'assets/discord.svg';
 import { ReactComponent as Telegram } from 'assets/Telegram.svg';
 
+import { discord, telegram, twitter } from 'utilities/variables';
+
 const colorChangeBlue = keyframes`
   100%{
     fill: #1F43BF; 
@@ -46,22 +48,20 @@ const StyledTelegramFooter = styled(Telegram)`
 
 const socialInfo = {
   discord: {
-    link: 'https://discord.gg/yfd',
+    link: { discord },
     iconFooter: <StyledDiscordFooter />,
     text: 'discord'
   },
   telegram: {
-    link: 'https://t.me/yfoundrydao',
+    link: { telegram },
     iconFooter: <StyledTelegramFooter />,
     text: 'telegram'
   },
   twitter: {
-    link: 'https://twitter.com/yieldfoundrydao',
+    link: { twitter },
     iconFooter: <StyledTwitterFooter />,
     text: 'twitter'
   }
 };
-
-export const medium = 'https://medium.com/@yfoundry/';
 
 export default socialInfo;

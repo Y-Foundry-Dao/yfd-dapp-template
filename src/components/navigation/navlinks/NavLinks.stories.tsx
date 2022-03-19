@@ -21,7 +21,9 @@ export const NavTemplate: ComponentStory<typeof NavLinks> = (args) => {
   );
 };
 
-export const LandingPage = NavTemplate.bind({});
+export const LandingPage: ComponentStory<typeof NavLinks> = NavTemplate.bind(
+  {}
+);
 LandingPage.args = {
   navLinks: ['about', 'medium', 'join community', 'roadmap']
 };

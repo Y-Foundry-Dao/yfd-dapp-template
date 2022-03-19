@@ -3,26 +3,23 @@ import styled from 'styled-components';
 interface Props {
   open: boolean;
   setOpen: any;
+  navLinks: Array<string>;
 }
 
 function Menu(props: Props) {
-  const { open, setOpen } = props;
+  const { open, setOpen, navLinks } = props;
 
   return (
     <StyledMenu open={open}>
       <Ul>
-        <Li onClick={() => setOpen(!open)}>
-          <Link href="#about">about</Link>
-        </Li>
-        <Li onClick={() => setOpen(!open)}>
-          <Link href="#medium">medium</Link>
-        </Li>
-        <Li onClick={() => setOpen(!open)}>
-          <Link href="#community">join community</Link>
-        </Li>
-        <Li onClick={() => setOpen(!open)}>
-          <Link href="#roadmap">roadmap</Link>
-        </Li>
+        {navLinks.length > 0 &&
+          navLinks.map((link: string) => {
+            return (
+              <Li onClick={() => setOpen(!open)}>
+                <Link href={`#${link}`}>{link}</Link>
+              </Li>
+            );
+          })}
       </Ul>
     </StyledMenu>
   );

@@ -1,4 +1,4 @@
-import BurgerIcon from './BurgerIcon';
+import BurgerIcon from 'components/navigation/burgerIcon/BurgerIcon';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { useState } from 'react';

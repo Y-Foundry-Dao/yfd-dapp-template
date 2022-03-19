@@ -1,4 +1,4 @@
-import BurgerMenu from './BurgerMenu';
+import BurgerMenu from 'components/navigation/burgerMenu/BurgerMenu';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 

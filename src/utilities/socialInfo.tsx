@@ -1,8 +1,8 @@
 import styled, { keyframes } from 'styled-components';
 
-import { ReactComponent as Twitter } from '../assets/twitter.svg';
-import { ReactComponent as Discord } from '../assets/discord.svg';
-import { ReactComponent as Telegram } from '../assets/Telegram.svg';
+import { ReactComponent as Twitter } from 'assets/twitter.svg';
+import { ReactComponent as Discord } from 'assets/discord.svg';
+import { ReactComponent as Telegram } from 'assets/Telegram.svg';
 
 const colorChangeBlue = keyframes`
   100%{

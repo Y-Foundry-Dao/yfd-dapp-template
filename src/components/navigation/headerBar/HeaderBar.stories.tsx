@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import HeaderBar from './HeaderBar';
-import yLogo from '../../../assets/yfd/logo-orange.svg';
+import HeaderBar from 'components/navigation/headerBar/HeaderBar';
+import yLogo from 'assets/yfd/logo-orange.svg';
 import { useState } from 'react';
 
 export default {

@@ -1,19 +1,17 @@
 import { useRef } from 'react';
 
-import BurgerIcon from '../burgerIcon/BurgerIcon';
-import BurgerMenu from '../burgerMenu/BurgerMenu';
+import BurgerIcon from 'components/navigation/burgerIcon/BurgerIcon';
+import BurgerMenu from 'components/navigation/burgerMenu/BurgerMenu';
 
-import useOnClickOutside from '../../../utilities/useOnClickOutside';
+import useOnClickOutside from 'utilities/useOnClickOutside';
 
 interface ComponentProps {
   open: boolean;
-  setOpen: any;
+  setOpen: (open: boolean) => void;
   navLinks: Array<string>;
 }
 
 function Burger({ open, setOpen, navLinks }: ComponentProps) {
-  // const [open, setOpen] = useState<boolean>(false);
-
   const burgerRef = useRef<HTMLDivElement>(null);
 
   // closes menu when clicking anywhere outside of it

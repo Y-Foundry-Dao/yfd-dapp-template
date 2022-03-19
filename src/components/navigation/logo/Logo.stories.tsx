@@ -1,5 +1,5 @@
-import Logo from './Logo';
-import yLogo from '../../../assets/yfd/logo-orange.svg';
+import Logo from 'components/navigation/logo/Logo';
+import yLogo from 'assets/yfd/logo-orange.svg';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 export default {

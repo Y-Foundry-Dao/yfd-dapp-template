@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 interface Props {
   open: boolean;
-  setOpen: any;
+  setOpen: (open: boolean) => void;
   navLinks: Array<string>;
 }
 

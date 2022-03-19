@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Logo from '../logo/Logo';
-import NavLinks from '../navlinks/NavLinks';
-import Burger from '../burger/Burger';
+import Logo from 'components/navigation/logo/Logo';
+import NavLinks from 'components/navigation/navlinks/NavLinks';
+import Burger from 'components/navigation/burger/Burger';
 
 interface Props {
   id: string;

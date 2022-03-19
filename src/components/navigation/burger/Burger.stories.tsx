@@ -1,9 +1,9 @@
-import Burger from './Burger';
+import Burger from 'components/navigation/burger/Burger';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { useState } from 'react';
-import { TemplateBurgerMenu } from '../burgerMenu/BurgerMenu.stories';
-import useOnClickOutside from '../../../utilities/useOnClickOutside';
+import { TemplateBurgerMenu } from 'components/navigation/burgerMenu/BurgerMenu.stories';
+import useOnClickOutside from 'utilities/useOnClickOutside';
 import { useRef } from 'react';
 
 export default {

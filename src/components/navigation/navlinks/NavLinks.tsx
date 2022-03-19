@@ -1,4 +1,4 @@
-import NavLink from '../navlink/NavLink';
+import NavLink from 'components/navigation/navlink/NavLink';
 import styled from 'styled-components';
 
 interface Props {

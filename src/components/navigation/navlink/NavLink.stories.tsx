@@ -1,4 +1,4 @@
-import NavLink from './NavLink';
+import NavLink from 'components/navigation/navlink/NavLink';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 export default {

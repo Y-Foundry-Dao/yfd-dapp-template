@@ -1,11 +1,18 @@
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 
-import BurgerIcon from './BurgerIcon';
-import BurgerMenu from './BurgerMenu';
+import BurgerIcon from '../burgerIcon/BurgerIcon';
+import BurgerMenu from '../burgerMenu/BurgerMenu';
+
 import useOnClickOutside from '../../../utilities/useOnClickOutside';
 
-function Burger() {
-  const [open, setOpen] = useState<boolean>(false);
+interface ComponentProps {
+  open: boolean;
+  setOpen: any;
+  navLinks: Array<string>;
+}
+
+function Burger({ open, setOpen, navLinks }: ComponentProps) {
+  // const [open, setOpen] = useState<boolean>(false);
 
   const burgerRef = useRef<HTMLDivElement>(null);
 
@@ -15,7 +22,7 @@ function Burger() {
   return (
     <div ref={burgerRef}>
       <BurgerIcon open={open} setOpen={setOpen} />
-      <BurgerMenu open={open} setOpen={setOpen} />
+      <BurgerMenu open={open} setOpen={setOpen} navLinks={navLinks} />
     </div>
   );
 }

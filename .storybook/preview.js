@@ -2,6 +2,7 @@ import ThemeComponent from '/src/styles/ThemeComponent';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { themes } from '@storybook/theming';
 import StorybookTheme from './StorybookTheme';
+import { viewports } from './viewports';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -51,8 +52,8 @@ export const parameters = {
     theme: themes.dark
   },
   viewport: {
-    viewports: INITIAL_VIEWPORTS
-  },
+    viewports: viewports
+  }
   viewMode: 'story'
 };
 

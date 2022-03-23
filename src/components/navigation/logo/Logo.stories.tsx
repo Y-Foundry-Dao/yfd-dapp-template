@@ -4,7 +4,22 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 export default {
   title: 'Navigation/YLogo',
-  component: Logo
+  component: Logo,
+  argTypes: {
+    src: {
+      table: {
+        disable: true
+      }
+    }
+  },
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'This is a Logo component to be composed into the headerbar component'
+      }
+    }
+  }
 } as ComponentMeta<typeof Logo>;
 
 export const LogoTemplate: ComponentStory<typeof Logo> = (args) => (

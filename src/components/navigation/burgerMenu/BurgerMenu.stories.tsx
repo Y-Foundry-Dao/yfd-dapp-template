@@ -46,6 +46,13 @@ export const LandingPageBurgerMenu: ComponentStory<typeof BurgerMenu> =
 LandingPageBurgerMenu.args = {
   navLinks: ['about', 'medium', 'join community', 'roadmap']
 };
+LandingPageBurgerMenu.argTypes = {
+  navLinks: {
+    table: {
+      disable: true
+    }
+  }
+};
 
 export const Open: ComponentStory<typeof BurgerMenu> = TemplateBurgerMenu.bind(
   {}

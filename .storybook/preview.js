@@ -44,7 +44,8 @@ export const parameters = {
   },
   viewport: {
     viewports: INITIAL_VIEWPORTS
-  }
+  },
+  viewMode: 'story'
 };
 
 export const decorators = [

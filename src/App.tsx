@@ -4,7 +4,8 @@ import yLogo from 'assets/yfd/logo-orange.svg';
 import { useState } from 'react';
 
 export default function App() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(false);
+
   return (
     <main>
       <HeaderBar

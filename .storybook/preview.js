@@ -1,5 +1,7 @@
 import ThemeComponent from '/src/styles/ThemeComponent';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { themes } from '@storybook/theming';
+import StorybookTheme from './StorybookTheme';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -40,7 +42,13 @@ export const parameters = {
     ]
   },
   darkMode: {
-    current: 'dark'
+    // Override the default dark theme
+    dark: { ...themes.dark, ...StorybookTheme },
+    // Override the default light theme
+    light: { ...themes.normal }
+  },
+  docs: {
+    theme: themes.dark
   },
   viewport: {
     viewports: INITIAL_VIEWPORTS

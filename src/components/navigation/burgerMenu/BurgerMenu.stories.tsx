@@ -7,8 +7,19 @@ export default {
   component: BurgerMenu,
   args: {
     open: false,
+    setOpen: (open: boolean) => {
+      !open;
+    },
     navLinks: ['link', 'link 2', 'link 3', 'link 4']
   },
+  argTypes: {
+    setOpen: {
+      table: {
+        disable: true
+      }
+    }
+  },
+
   parameters: {
     // The viewports object from the Essentials addon
     viewport: {

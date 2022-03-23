@@ -1,8 +1,9 @@
 import ThemeComponent from '/src/styles/ThemeComponent';
-import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { themes } from '@storybook/theming';
 import StorybookTheme from './StorybookTheme';
+import { Canvas } from './Canvas';
 import { viewports } from './viewports';
+import { Meta, Story } from '@storybook/addon-docs';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -49,12 +50,21 @@ export const parameters = {
     light: { ...themes.normal }
   },
   docs: {
+    components: {
+      Canvas,
+      /**
+       * These next two aren't strictly necessary for the technique, but
+       * anything you define here doesn't need imported in your mdx file, which
+       * I find convenient.
+       */
+      Meta,
+      Story
+    },
     theme: themes.dark
   },
   viewport: {
     viewports: viewports
   }
-  viewMode: 'story'
 };
 
 export const decorators = [

@@ -23,6 +23,11 @@ export default {
 export const TemplateBurgerMenu: ComponentStory<typeof BurgerMenu> = (args) => {
   return <BurgerMenu {...args} />;
 };
+TemplateBurgerMenu.parameters = {
+  docs: {
+    disable: true
+  }
+};
 
 export const LandingPageBurgerMenu: ComponentStory<typeof BurgerMenu> =
   TemplateBurgerMenu.bind({});
@@ -48,5 +53,10 @@ Open.argTypes = {
     table: {
       disable: true
     }
+  }
+};
+Open.parameters = {
+  docs: {
+    disable: true
   }
 };

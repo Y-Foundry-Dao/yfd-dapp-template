@@ -26,4 +26,20 @@ export const Template: ComponentStory<typeof HeaderBar> = (args) => {
   const [open, setOpen] = useState(false);
   return <HeaderBar {...args} open={open} setOpen={setOpen} />;
 };
-Template.args = {};
+Template.argTypes = {
+  id: {
+    table: {
+      disable: true
+    }
+  },
+  src: {
+    table: {
+      disable: true
+    }
+  },
+  setOpen: {
+    table: {
+      disable: true
+    }
+  }
+};

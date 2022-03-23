@@ -4,13 +4,12 @@ import styled from 'styled-components';
 
 interface ComponentProps {
   open: boolean;
-  setOpen: any;
+  setOpen: (open: boolean) => void;
 }
 
 interface StyleProps {
   open: boolean;
-  //eslint-disable-next-line
-  onClick: Function;
+  onClick: () => void;
 }
 
 const BurgerIcon: React.FC<ComponentProps> = ({

@@ -27,6 +27,11 @@ export default {
       viewports: INITIAL_VIEWPORTS,
       // Your own default viewport
       defaultViewport: 'iphone5'
+    },
+    docs: {
+      // Opt-out of inline rendering
+      // inlineStories: false,
+      iframeHeight: 600
     }
   }
 } as ComponentMeta<typeof BurgerMenu>;

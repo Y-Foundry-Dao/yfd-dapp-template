@@ -64,6 +64,16 @@ export const parameters = {
   },
   viewport: {
     viewports: viewports
+  },
+  options: {
+    storySort: {
+      order: [
+        'Intro',
+        ['Introduction', 'Colors', 'Typography'],
+        'Navigation',
+        '*'
+      ]
+    }
   }
 };
 

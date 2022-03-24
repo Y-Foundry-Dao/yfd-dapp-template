@@ -3499,6 +3499,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-scroll@^1.8.3":
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/@types/react-scroll/-/react-scroll-1.8.3.tgz#80951ed1934ab49d4926aad95c26607b8b1a9713"
+  integrity sha512-Xt0+Y58pwrIv+vRFxcyKDoo0gBWBR2eNMJ4XRMhQpZdGUtmjnszPi/wFEJSAY+5r83ypJsSA+hOpSc3hRpYlWw==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-syntax-highlighter@11.0.5":
   version "11.0.5"
   resolved "https://registry.yarnpkg.com/@types/react-syntax-highlighter/-/react-syntax-highlighter-11.0.5.tgz#0d546261b4021e1f9d85b50401c0a42acb106087"
@@ -7517,7 +7524,7 @@ extract-zip@2.0.1:
   optionalDependencies:
     "@types/yauzl" "^2.9.1"
 
-fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
+fast-deep-equal@^3.0.0, fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
@@ -10126,6 +10133,11 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
+lodash.throttle@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+  integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
+
 lodash.uniq@4.5.0, lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
@@ -12681,6 +12693,14 @@ react-scripts@5.0.0:
   optionalDependencies:
     fsevents "^2.3.2"
 
+react-scroll@^1.8.6:
+  version "1.8.6"
+  resolved "https://registry.yarnpkg.com/react-scroll/-/react-scroll-1.8.6.tgz#134a7adc61c0fa0f71b1cfcaa82e6736b6c52549"
+  integrity sha512-VbbvjzLXvCjr2kiiG/lpLFim6mHpkXMdvOXQqwoSnUKyQPNmAo72r46x9C5PTLPSJq/dBd0gwrlZnnxqj5Yz1Q==
+  dependencies:
+    lodash.throttle "^4.1.1"
+    prop-types "^15.7.2"
+
 react-sizeme@^3.0.1:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/react-sizeme/-/react-sizeme-3.0.2.tgz#4a2f167905ba8f8b8d932a9e35164e459f9020e4"
@@ -13816,6 +13836,14 @@ store2@^2.12.0:
   version "2.13.1"
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.13.1.tgz#fae7b5bb9d35fc53dc61cd262df3abb2f6e59022"
   integrity sha512-iJtHSGmNgAUx0b/MCS6ASGxb//hGrHHRgzvN+K5bvkBTN7A9RTpPSf1WSp+nPGvWCJ1jRnvY7MKnuqfoi3OEqg==
+
+storybook-dark-mode@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/storybook-dark-mode/-/storybook-dark-mode-1.0.9.tgz#40c15aa340bc700df2fb4f1345250e6fdace0b3a"
+  integrity sha512-ITPXM2OSaga1zM5blpZy5HxMWAhrAqYi9aJtLgRtSdgoRrxVNAInDRD14TjmObdgLHNWxINoNbnEB+sKETa+iw==
+  dependencies:
+    fast-deep-equal "^3.0.0"
+    memoizerific "^1.11.3"
 
 stream-browserify@^2.0.1:
   version "2.0.2"

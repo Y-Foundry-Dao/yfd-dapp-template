@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Canvas as SBCanvas, DocsContext } from '@storybook/addon-docs';
 
-import { viewports } from './viewports';
+import { viewports } from '/.storybook/viewports';
 
 export const Canvas = (props) => {
   // You can access `parameters` from DocsContext

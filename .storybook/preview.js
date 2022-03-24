@@ -1,8 +1,8 @@
 import ThemeComponent from '/src/styles/ThemeComponent';
 import { themes } from '@storybook/theming';
-import StorybookTheme from './StorybookTheme';
-import { Canvas } from './Canvas';
-import { viewports } from './viewports';
+import StorybookTheme from '/.storybook/StorybookTheme';
+import { Canvas } from '/.storybook/Canvas';
+import { viewports } from '/.storybook/viewports';
 import { Meta, Story } from '@storybook/addon-docs';
 
 export const parameters = {

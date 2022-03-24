@@ -1,4 +1,5 @@
 const { ProvidePlugin } = require('webpack');
+const path = require('path');
 
 module.exports = function override(config, env) {
   config.resolve.fallback = {
@@ -13,6 +14,11 @@ module.exports = function override(config, env) {
       process: 'process/browser'
     })
   );
+
+  config.resolve.modules = [
+    ...(config.resolve.modules || []),
+    path.resolve('./')
+  ];
 
   return config;
 };

@@ -1,24 +1,16 @@
 import NavLinks from 'components/navigation/navlinks/NavLinks';
-import NavLink from 'components/navigation/navlink/NavLink';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 export default {
   title: 'Navigation/NavLinks',
   component: NavLinks,
-  subcomponents: { NavLink },
   args: {
     navLinks: ['link', 'link 2', 'link 3', 'link 4']
   }
 } as ComponentMeta<typeof NavLinks>;
 
 export const NavTemplate: ComponentStory<typeof NavLinks> = (args) => {
-  return (
-    <NavLinks {...args}>
-      {args.navLinks.map((link: string) => (
-        <NavLink text={link} />
-      ))}
-    </NavLinks>
-  );
+  return <NavLinks {...args} />;
 };
 
 export const LandingPage: ComponentStory<typeof NavLinks> = NavTemplate.bind(

@@ -10,8 +10,8 @@ function NavLinks({ navLinks }: Props) {
     <Nav>
       <Ul>
         {navLinks.length > 0 &&
-          navLinks.map((link: string) => {
-            return <NavLink text={link} />;
+          navLinks.map((link: string, i: number) => {
+            return <NavLink key={i} text={link} />;
           })}
       </Ul>
     </Nav>

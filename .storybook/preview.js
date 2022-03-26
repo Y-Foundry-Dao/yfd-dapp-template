@@ -1,5 +1,9 @@
 import ThemeComponent from '/src/styles/ThemeComponent';
-import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { themes } from '@storybook/theming';
+import StorybookTheme from '/.storybook/StorybookTheme';
+import { Canvas } from '/.storybook/Canvas';
+import { viewports } from '/.storybook/viewports';
+import { Meta, Story } from '@storybook/addon-docs';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -40,10 +44,36 @@ export const parameters = {
     ]
   },
   darkMode: {
-    current: 'dark'
+    // Override the default dark theme
+    dark: { ...themes.dark, ...StorybookTheme },
+    // Override the default light theme
+    light: { ...themes.normal }
+  },
+  docs: {
+    components: {
+      Canvas,
+      /**
+       * These next two aren't strictly necessary for the technique, but
+       * anything you define here doesn't need imported in your mdx file, which
+       * I find convenient.
+       */
+      Meta,
+      Story
+    },
+    theme: themes.dark
   },
   viewport: {
-    viewports: INITIAL_VIEWPORTS
+    viewports: viewports
+  },
+  options: {
+    storySort: {
+      order: [
+        'Intro',
+        ['Introduction', 'Colors', 'Typography'],
+        'Navigation',
+        '*'
+      ]
+    }
   }
 };
 

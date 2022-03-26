@@ -13,9 +13,9 @@ function Menu(props: Props) {
     <StyledMenu open={open}>
       <Ul>
         {navLinks.length > 0 &&
-          navLinks.map((link: string) => {
+          navLinks.map((link: string, i: number) => {
             return (
-              <Li onClick={() => setOpen(!open)}>
+              <Li key={i} onClick={() => setOpen(!open)}>
                 <Link href={`#${link}`}>{link}</Link>
               </Li>
             );

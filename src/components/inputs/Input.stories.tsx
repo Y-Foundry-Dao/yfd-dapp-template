@@ -1,7 +1,7 @@
 import Input from 'components/inputs/Input';
 
 export default {
-  title: 'Input',
+  title: 'Sample/Input',
   component: Input
 };
 

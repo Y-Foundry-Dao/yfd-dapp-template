@@ -6,10 +6,9 @@ const ConnectButton = () => {
   return (
     <div>
       <h1>Available Installations</h1>
-
       <div>
-        {availableConnections.map(({ type, identifier, name, icon }) => (
-          <button key={identifier} onClick={() => connect(type, identifier)}>
+        {availableConnections.map(({ type, identifier, name, icon }, i) => (
+          <button key={i} onClick={() => connect(type, identifier)}>
             <img
               src={icon}
               alt={name}
@@ -18,8 +17,8 @@ const ConnectButton = () => {
             Connect {name} [{identifier}]
           </button>
         ))}
-        {availableInstallations.map(({ type, identifier, name, icon, url }) => (
-          <button key={identifier} onClick={() => (window.location.href = url)}>
+        {availableInstallations.map(({ identifier, name, icon, url }, i) => (
+          <button key={i} onClick={() => (window.location.href = url)}>
             <img
               src={icon}
               alt={name}

@@ -1,9 +1,10 @@
-import Input from 'components/inputs/Input';
+import { useState } from 'react';
+
 import HeaderBar from 'components/navigation/headerBar/HeaderBar';
 import yLogo from 'assets/yfd/logo-orange.svg';
-import { useState } from 'react';
-import { ConnectSample } from 'components/samples/ConnectSample';
-import ConnectButton from 'components/buttons/ConnectButton';
+import longLogo from 'assets/yfd/logo-horizontal-orange-white.svg';
+import FooterBar from 'components/footer/footerBar/FooterBar';
+import socialInfo from 'utilities/socialInfo';
 
 export default function App() {
   const [open, setOpen] = useState<boolean>(false);
@@ -18,10 +19,7 @@ export default function App() {
         open={open}
         setOpen={setOpen}
       />
-      <p>Hello World</p>
-      <Input />
-      <ConnectSample />
-      <ConnectButton />
+      <FooterBar logo={longLogo} alt="YFD Logo" socialInfo={socialInfo} />
     </main>
   );
 }

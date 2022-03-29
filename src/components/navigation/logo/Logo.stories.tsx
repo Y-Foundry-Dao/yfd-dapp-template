@@ -22,10 +22,8 @@ export default {
   }
 } as ComponentMeta<typeof Logo>;
 
-export const LogoTemplate: ComponentStory<typeof Logo> = (args) => (
-  <Logo {...args} />
-);
-LogoTemplate.args = {
+export const YLogo: ComponentStory<typeof Logo> = (args) => <Logo {...args} />;
+YLogo.args = {
   src: yLogo,
   alt: 'Y logo'
 };
